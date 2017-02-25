@@ -42,7 +42,7 @@ h1{font-family: 'Abril Fatface', cursive;}
 .jumbotron:after{
 	content: "";
 	position: absolute;
-	background-image: url(../images/bgLandingPage.jpg);
+	background: url(../images/bgLandingPage.jpg);
 	top: 0;
 	left: 0;
 	bottom: 0;
