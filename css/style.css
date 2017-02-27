@@ -5,6 +5,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+
 body{font-size: 16px; font-family: 'Raleway', sans-serif;}
 h1{font-family: 'Abril Fatface', cursive;}
 
@@ -32,22 +33,9 @@ h1{font-family: 'Abril Fatface', cursive;}
 }
 
 .jumbotron{
-	background: red;
-	opacity: 0.5;
-	position: relative;
+	height: 100vh;
+	color: white;
 }
-.jumbotron:after{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	background: url(../images/bgLandingPageMobile.jpg);
-	z-index: -10
-}
-
-
 
 .portfolio,.moreToCome{margin: 10px 0;}
 .portfolio p{margin: 0;}
@@ -99,13 +87,51 @@ footer{background: #000; color: #fff;margin-top: 20px;}
 footer p{margin: 0;padding: 15px 0;}
 
 
-@media screen and (min-width: 576px){
+@media screen and (min-width: 200px){
+	.name{ display: none;}
+	h1.headerTitle{display: block;}
+
 	.jumbotron{
-		background: green;
-	
+		background: rgba(0,0,0,0.5);
+		position: relative;
+	}
+	.jumbotron:after{
+		content: "";
+		position: absolute;
+		background: url(../images/bgLandingPageMobile.jpg);
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-size: cover;
+		background-attachment: fixed; 
+		background-position: top left;
+		z-index: -1;
 	}
 }
 
+@media screen and (min-width: 576px){
+	.name{ display: block;}
+	h1.headerTitle{display: none;}
+
+	.jumbotron{
+		background: rgba(0,0,0,0.5);
+		position: relative;
+	}
+	.jumbotron:after{
+		content: "";
+		position: absolute;
+		background: url(../images/bgLandingPage.jpg);
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-size: cover;
+		background-attachment: fixed; 
+		background-position: center center;
+		z-index: -1;
+	}
+}
 @media screen and (min-width: 768px){
 	.aboutMeContent p,
 	.contactMsg p{line-height: 1.75em;}
