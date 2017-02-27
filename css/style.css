@@ -48,7 +48,7 @@ h1{font-family: 'Abril Fatface', cursive;}
 	right: 0;
 	background-size: cover;
 	background-attachment: fixed; 
-	background-position: center center;
+	background-position: top center;
 	z-index: -1;
 }
 
