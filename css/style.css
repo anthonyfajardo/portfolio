@@ -101,7 +101,7 @@ footer p{margin: 0;padding: 15px 0;}
 
 
 @media screen and (min-width: 300px){
-	.name{ display: none;}
+	.jumbotron .name{ display: none;}
 	h1.headerTitle{display: block;}
 
 }
