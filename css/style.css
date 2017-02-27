@@ -31,6 +31,27 @@ h1{font-family: 'Abril Fatface', cursive;}
 	cursor:pointer;
 }
 
+.jumbotron{
+	margin-bottom: 0;
+	height: 100vh;
+	color: #fff;
+	position: relative;
+	background: rgba(0,0,0,0.75);
+}
+.jumbotron:after{
+	content: "";
+	position: absolute;
+	background: url(../images/bgLandingPageMobile.jpg);
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-size: cover;
+	background-attachment: fixed; 
+	background-position: center center;
+	z-index: -1;
+}
+
 .portfolio,.moreToCome{margin: 10px 0;}
 .portfolio p{margin: 0;}
 .portfolio .item{
@@ -84,6 +105,12 @@ footer p{margin: 0;padding: 15px 0;}
 @media screen and (min-width: 320px){
 	.name{ display: none;}
 	h1.headerTitle{display: block;}
+
+}
+
+@media screen and (min-width: 576px){
+	.name{ display: block;}
+	h1.headerTitle{display: none;}
 	
 	.jumbotron{
 		margin-bottom: 0;
@@ -92,10 +119,11 @@ footer p{margin: 0;padding: 15px 0;}
 		position: relative;
 		background: rgba(0,0,0,0.75);
 	}
+
 	.jumbotron:after{
 		content: "";
 		position: absolute;
-		background: url(../images/bgLandingPageMobile.jpg);
+		background: url(../images/bgLandingPage.jpg);
 		top: 0;
 		left: 0;
 		bottom: 0;
@@ -105,33 +133,6 @@ footer p{margin: 0;padding: 15px 0;}
 		background-position: center center;
 		z-index: -1;
 	}
-}
-
-@media screen and (min-width: 576px){
-	.name{ display: block;}
-	h1.headerTitle{display: none;}
-	
-	.jumbotron{
-	margin-bottom: 0;
-	height: 100vh;
-	color: #fff;
-	position: relative;
-	background: rgba(0,0,0,0.75);
-}
-
-.jumbotron:after{
-	content: "";
-	position: absolute;
-	background: url(../images/bgLandingPage.jpg);
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	background-size: cover;
-	background-attachment: fixed; 
-	background-position: center center;
-	z-index: -1;
-}
 }
 
 @media screen and (min-width: 768px){
