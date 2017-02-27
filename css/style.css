@@ -103,12 +103,7 @@ footer p{margin: 0;padding: 15px 0;}
 
 
 @media screen and (min-width: 576px){
-	.name{ display: block;}
-	h1.headerTitle{display: none;}
-	
-	.jumbotron{
-		background: blue;
-	}
+	.jumbotron{background: orange}
 }
 
 @media screen and (min-width: 768px){
