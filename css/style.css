@@ -33,10 +33,8 @@ h1{font-family: 'Abril Fatface', cursive;}
 
 .jumbotron{
 	position: relative;
-	background: rgba(0,0,0,0.5);
-	
+	background: rgba(0,0,0,0.5);	
 }
-
 .jumbotron:after{
 	position: absolute;
 	content: "";
@@ -49,6 +47,10 @@ h1{font-family: 'Abril Fatface', cursive;}
 	background-attachment: fixed;
 	background-position: top left;
 	z-index: -1;
+}
+
+.jumbotron .name{display: none;}
+.jumbotron h1.headerTitle{display: block;}
 
 .portfolio,.moreToCome{margin: 10px 0;}
 .portfolio p{margin: 0;}
@@ -99,12 +101,6 @@ h1{font-family: 'Abril Fatface', cursive;}
 footer{background: #000; color: #fff;margin-top: 20px;}
 footer p{margin: 0;padding: 15px 0;}
 
-
-@media screen and (min-width: 300px){
-	.jumbotron .name{ display: none;}
-	h1.headerTitle{display: block;}
-
-}
 
 @media screen and (min-width: 576px){
 	.name{ display: block;}
