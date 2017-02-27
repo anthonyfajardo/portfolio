@@ -35,13 +35,6 @@ h1{font-family: 'Abril Fatface', cursive;}
 	background: blue;
 }
 
-.jumbotron .name{
-	display: none;
-}
-
-.jumbotron .headerTitle{
-	display: block;
-}
 
 
 .portfolio,.moreToCome{margin: 10px 0;}
