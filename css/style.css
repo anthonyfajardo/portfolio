@@ -85,7 +85,21 @@ footer p{margin: 0;padding: 15px 0;}
 
 
 @media screen and (min-width: 576px){
-	.jumbotron{background: orange}
+	.jumbotron{
+		position: relative;
+		background: rgba(0,0,0,0.5);
+	}
+	
+	.jumbotron{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: (../images/bgLandingPage.jpg);
+		background-size: cover;
+		z-index: -1;		
 }
 
 @media screen and (min-width: 768px){
