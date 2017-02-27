@@ -32,24 +32,7 @@ h1{font-family: 'Abril Fatface', cursive;}
 }
 
 .jumbotron{
-	margin-bottom: 0;
-	height: 100vh;
-	color: #fff;
-	position: relative;
 	background: red;
-}
-.jumbotron:after{
-	content: "";
-	position: absolute;
-	background: url(../images/bgLandingPageMobile.jpg);
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	background-size: cover;
-	background-attachment: fixed; 
-	background-position: top center;
-	z-index: -1;
 }
 
 .portfolio,.moreToCome{margin: 10px 0;}
