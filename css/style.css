@@ -99,7 +99,8 @@ footer p{margin: 0;padding: 15px 0;}
 		bottom: 0;
 		background: (../images/bgLandingPage.jpg);
 		background-size: cover;
-		z-index: -1;		
+		z-index: -1;	
+	}
 }
 
 @media screen and (min-width: 768px){
